@@ -5,6 +5,7 @@ const foodItems = [
   {
     id: 1,
     name: 'Jollof Rice',
+    description: 'A vibrant West African dish of seasoned rice simmered in a rich, spiced tomato sauce with onions and peppers, served with your choice of tender chicken, beef, or fish. A flavorful and hearty classic!',
     image: 'https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=800&auto=format&fit=crop'
   },
   {
@@ -53,6 +54,7 @@ const Menu = () => {
           <div key={item.id} className="food-card">
             <img src={item.image} alt={item.name} className="food-image" />
             <h3 className="food-name">{item.name}</h3>
+            {item.description && <p className="food-description">{item.description}</p>}
           </div>
         ))}
       </div>

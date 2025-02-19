@@ -63,7 +63,7 @@ function App() {
               ].map((dish) => (
                 <div key={dish.name} className="bg-black/50 p-6 rounded-lg">
                   <h3 className="text-xl text-white mb-2">{dish.name}</h3>
-                  <p className="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p className="text-gray-300">{dish.name === 'Jollof Rice' ? 'A vibrant West African dish of seasoned rice simmered in a rich, spiced tomato sauce with onions and peppers, served with your choice of tender chicken, beef, or fish. A flavorful and hearty classic!' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}</p>
                   <p className="text-yellow-400 mt-2">${dish.price.toFixed(2)}</p>
                 </div>
               ))}

@@ -35,3 +35,14 @@
   font-size: 1rem;
   white-space: normal;
 }
+
+.food-description {
+  padding: 0 10px 10px;
+  margin: 0;
+  text-align: left;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #666;
+  background: #fff;
+  white-space: normal;
+}
